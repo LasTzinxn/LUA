@@ -1,0 +1,16 @@
+local bloco = script.Parent
+  
+bloco.CanCollide =true
+bloco.Anchored = true
+
+local function quandotocar(part)
+	print (part.Name)
+	print (part.Parent)
+	
+	if part.Parent:FindFirstChild("Humanoid") then 
+		bloco.Color = Color3.new (1, 0 , 0)
+		print ("A parte ".. part.Name .." pertence a um humanoide") 
+	end
+end
+
+bloco.Touched:Connect(quandotocar)
