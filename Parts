@@ -1,1 +1,22 @@
+-- Faz a peça sumir depois depois de 5 segundos
+local bloco = script.Parent
+
+bloco.Anchored = true
+bloco.CanCollide = false
+bloco.Transparency = 0.5
+
+local bloco = script.Parent
+
+task.wait(5)
+bloco:destroy()
+
+-- ele printa se o objeto é quase invisivel ou visivel
+
+if bloco.Transparency <= 0.5 then
+	print ("quase invisivel")
+else 
+	print ("visivel")
+end
+
+local bloco = script.Parent
 
