@@ -1,0 +1,15 @@
+local bloco = script.Parent
+
+bloco.Anchored = true
+bloco.CanCollide = false
+
+
+local bloco = script.Parent
+while true do
+	bloco.Color = Color3.fromRGB (255, 0, 0)
+	task.wait(1)
+	bloco.Color = Color3.fromRGB (0, 255, 0)
+	task.wait(1)
+	bloco.Color = Color3.fromRGB (0, 0, 255)
+	task.wait(1)
+end
